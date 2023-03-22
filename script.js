@@ -11,5 +11,7 @@ items.forEach( function(item) {
     item.style.borderColor = 'black';
     item.style.borderStyle = 'solid';
     item.style.backgroundColor = 'white';
+    item.style.height = '50px';
+    item.style.width = '50px';
 }
 )
