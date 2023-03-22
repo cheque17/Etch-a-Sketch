@@ -8,11 +8,13 @@ for(i=0; i<(16*16); i++){
 }
 
 items.forEach( function(item) {
-    /*item.style.borderColor = 'black';
-    item.style.borderStyle = 'solid';
-    item.style.borderWidth = '1px';*/
-    //item.style.backgroundColor = 'white';
     item.style.height = '32px';
     item.style.width = '32px';
 }
 )
+
+items.forEach ( (item) => {
+    item.addEventListener('mouseover', function () {
+        item.style.backgroundColor = 'black';
+    })
+})
