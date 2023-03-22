@@ -6,3 +6,10 @@ for(i=0; i<(16*16); i++){
     items.push(item);
     container.appendChild(item);
 }
+
+items.forEach( function(item) {
+    item.style.borderColor = 'black';
+    item.style.borderStyle = 'solid';
+    item.style.backgroundColor = 'white';
+}
+)
