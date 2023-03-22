@@ -12,3 +12,6 @@
     width: 512px;
 }
 
+#container div:hover {
+    background-color: black;
+}
