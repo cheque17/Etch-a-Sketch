@@ -21,11 +21,30 @@ promptGenerator.addEventListener('click', function (size){
         items.push(item);
         container.appendChild(item);   
         }
+    items.forEach( function(item) {
+        item.style.height = `(512/${size})px`;
+        item.style.width = `(512/${size})px`;
+        })
+
+    
+    items.forEach ( (item) => {
+        item.addEventListener('mouseover', function () {
+            item.style.backgroundColor = 'black';
+        })
+        })
 })
+
+/*
+items.forEach ( (item) => {
+    item.addEventListener('mouseover', function () {
+        item.style.backgroundColor = 'black';
+    })
+})*/
+
  
 
 
-console.log(size);
+
 /*
     for(i=0; i<(size*size); i++){
     let item = document.createElement('div');
